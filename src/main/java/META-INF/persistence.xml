@@ -5,7 +5,6 @@
     <!-- Implementação do JPA -->
     <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
     <!-- Lista de entidades -->
-    <class>model.bean.Recepcionista</class>
     <class>model.bean.ClasseFilha</class>
     <properties>
       <!-- Propriedades JDBC -->
