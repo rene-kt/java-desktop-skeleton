@@ -1,6 +1,9 @@
-package main;
 
+package view;
+
+import java.io.File;
 import java.io.IOException;
+import java.net.URL;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -17,7 +20,10 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         
-        Parent root = FXMLLoader.load(getClass().getResource("/view/home.fxml"));
+        
+        URL url = new File("src/main/java/view/home.fxml").toURI().toURL();
+        Parent root = FXMLLoader.load(url);
+        
 
         Scene scene = new Scene(root);
 
